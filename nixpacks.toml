@@ -6,3 +6,7 @@ cmds = ["composer install --no-dev --optimize-autoloader"]
 
 [start]
 cmd = "php artisan serve --host=0.0.0.0 --port=$PORT"
+
+# Añade esta sección para forzar la versión de PHP:
+[variables]
+PHP_VERSION = "8.4"
