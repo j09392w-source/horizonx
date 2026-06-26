@@ -25,8 +25,4 @@ _ide_helper.php
 Homestead.json
 Homestead.yaml
 Thumbs.db
-# Crear el archivo y agregar las exclusiones
-echo "/vendor" >> .gitignore
-echo "/.env" >> .gitignore
-echo "/storage/framework/cache/*" >> .gitignore
-echo "/node_modules" >> .gitignore
+
