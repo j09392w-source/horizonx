@@ -1,0 +1,402 @@
+:root {
+    --primary-color:  #FFB300;
+    --base-tomato: #fb724b;
+    --text-bg-nostragram: linear-gradient(to right, #FFB300, #CC8400, #8A5A00);
+    --primary-text: #E0E0E0;
+    --border-primary-inputs: #363636;
+    --brillante: #FFB300;
+    --second-text: #A0A0A0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #121212;
+    color: var(--primary-text);
+    font-family: 'Inter', sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    font-size: 16px;
+    padding: 12px;
+}
+
+.cabeza-login {
+    text-align: center;
+}
+
+.header__logo {
+    height: 120px;
+    width: 120px;
+    filter: drop-shadow(0 0 8px rgba(255, 179, 0, 0.6));
+}
+
+.cuerpo-login {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tarjeta-login {
+    background: #1E1E1E;
+    border-top: 1px solid var(--border-primary-inputs);
+    border-bottom: 1px solid var(--border-primary-inputs);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.tarjeta-login__cabecera {
+    width: 100%;
+    padding: 25px;
+}
+
+.tarjeta-login__titulo {
+    font-size: 17px;
+}
+
+.tarjeta-login__titulo__nostagram {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: var(--text-bg-nostragram);
+}
+
+.text-logo__titulo {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: var(--text-bg-nostragram);
+    font-size: 1.4rem;
+}
+
+.tarjeta-login__formulario {
+    width: 100%;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.grupo-input {
+    width: 100%;
+    
+}
+
+.grupo-input__campo {
+    width: 100%;
+    min-height: 58px;
+    border-radius: 18px;
+    background: transparent;
+    border: 1px solid var(--border-primary-inputs);
+    padding: 0 15px;
+    transition: 0.3s ease-in;
+    color: var(--primary-text) !important;
+}
+
+.grupo-input__campo::placeholder {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--second-text);
+}
+
+.grupo-input__campo:focus {
+    border: 1.5px solid var(--primary-color);
+    outline: none;
+}
+
+.tarjeta-login__formulario__boton {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-primario {
+    height: 40px;
+    border-radius: 20px;
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    background: var(--primary-color);
+    color: black;
+}
+
+.vinculo-azul {
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-text);
+}
+
+.cabeza-dashboard {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 0.5px solid var(--border-primary-inputs);
+}
+
+.cabeza-dashboard a {
+    color: var(--primary-text);
+    font-size: 1.6rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 0.5px solid var(--border-primary-inputs);
+    padding: 1rem;
+    background: #121212;
+    transition: .6;
+    pointer-events: auto;
+}
+
+.navbar a {
+    color: var(--primary-text);
+    font-size: 1.7rem;
+    padding: 5px 10px ;
+}
+
+.navbar-scroll {
+    transition: .6s;
+}
+
+.tarjeta-publicacion__encabezado {
+    display: flex;
+    align-items: center;
+    padding: 6px 5px;
+    gap: 8px;
+}
+
+.tarjeta-publicacion__icono {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--brillante);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.tarjeta-publicacion__encabezado__nombre {
+    color: #F5F5F5;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.tarjeta-publicacion__fecha {
+    color: var(--second-text);
+}
+
+.verificado {
+    color: var(--primary-color);
+}
+
+.tarjeta-publicacion__cuerpo {
+    max-width: 470px; /* Este es el ancho clásico de un post de Instagram en PC */
+    width: 100%; /* En pantallas pequeñas, ocupará todo el espacio disponible */
+    margin: 0 auto; /* Centra la tarjeta en la pantalla */
+    border: 1px solid #262626; /* Borde gris muy sutil tipo IG oscuro */
+    border-radius: 4px; /* Esquinas ligeramente redondeadas */
+}
+
+.tarjeta-publicacion__imagen {
+    width: 100%; /* Ocupa todo el ancho de su contenedor */
+    aspect-ratio: 1 / 1; /* Fuerza a que sea un CUADRADO perfecto. Puedes cambiarlo a 4 / 5 para formato vertical */
+    object-fit: cover; /* Recorta los sobrantes sin deformar la cara de nadie */
+    display: block;
+}
+
+.tarjeta-publicacion__pie {
+    padding: 5px 10px;
+}
+
+
+
+
+
+.contenedor-crear {
+    max-width: 470px;
+    width: 100%;
+    margin: 20px auto;
+    border: 1px solid #262626;
+    border-radius: 8px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.titulo-crear {
+    color: #F5F5F5;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* El cuadrado estilo Instagram para la foto */
+.zona-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Cuadrado perfecto */
+    background-color: #121212;
+    border: 1px dashed #444;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    transition: border 0.3s ease;
+}
+
+.zona-preview:hover {
+    border-color: #FFB300;
+}
+
+.texto-upload {
+    text-align: center;
+    color: #A0A0A0;
+}
+
+.texto-upload p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Ocultamos el input feo por defecto del navegador */
+#foto-upload {
+    display: none;
+}
+
+/* Estilo de la imagen cuando ya se seleccionó */
+.imagen-mostrada {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para que no se deforme */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Estilos de los textos y botones */
+.input-texto {
+    width: 100%;
+    padding: 12px;
+    background-color: #121212;
+    border: 1px solid #262626;
+    border-radius: 8px;
+    color: #F5F5F5;
+    font-family: inherit;
+    resize: none;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.input-texto:focus {
+    outline: none;
+    border-color: #FFB300;
+}
+
+.btn-guardar {
+    width: 100%;
+    padding: 12px;
+    background-color: #FFB300;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-guardar:hover {
+    background-color: #E6A100;
+}
+
+.contenido-perfil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 10px;
+}
+
+.contenido-perfil__encabezado {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    
+}
+
+.perfil-names {
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil__username {
+    font-size: 0.7rem;
+    color: var(--second-text);
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-weight: 600;
+}
+
+.texto-verificado {
+    transform: translateX(-1px);
+    opacity: 0.5;
+}
+
+.contenido-perfil__editar-perfil {
+    width: 100px;
+    height: 40px;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    background: transparent;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid #fff;
+}
+
+.contenedor-publicaciones {
+    display: grid;
+    /* Esto crea 3 columnas automáticas que ocupan el mismo ancho */
+    grid-template-columns: repeat(3, 1fr); 
+    /* Un pequeño espacio entre fotos (como el de Instagram) */
+    gap: 3px; 
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tarjeta-publicacion-grid {
+    width: 100%;
+    /* El truco del cuadrado perfecto */
+    aspect-ratio: 1 / 1; 
+    overflow: hidden;
+}
+
+.tarjeta-publicacion-grid img {
+    width: 100%;
+    height: 100%;
+    /* Recorta la imagen para que llene el cuadrado sin estirarse */
+    object-fit: cover; 
+    display: block;
+}
+
+.contenido-perfil__publicaciones__cuerpo__titulo {
+    padding: 6px 8px;
+}
